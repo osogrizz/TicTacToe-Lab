@@ -17,21 +17,26 @@
 
 	<link href="http://fonts.googleapis.com/css?family=Lobster+Two" rel="stylesheet" type="text/css">
 
-	<h1>Tic Tac Toe</h1>
+	<h1>Tic -Tac -Toe</h1>
 
 </head>
 <body>
 
-
+<table class="grid">
 <table class="row1">
-	<tbody>
+	<tbody id="pX">
 		<tr>
-			<td id="box1" font-size= "30px" ></td>
+			<td id="playerX"><p>Player X's <br>turn</p></td>
+			<td id="blank">x</td>
+			<td id="box1"></td>
 			<td id="box2"></td>
 			<td id="box3"></td>
+			<td id="blank">x</td>
+			<td id="playerO"><p>Player O's<br>turn</p></td>
 		</tr>
-	</tbody>
+	<tbody>	
 </table>
+
 <table class="row2">
 	<tbody>
 		<tr>
@@ -50,6 +55,11 @@
 		</tr>
 	</tbody>
 </table>
+</table>
+
+<form id= "newGame" action="">
+	<button input-type="reset" value="Reset">New Game</button>
+</form>
 
 
 </body>
